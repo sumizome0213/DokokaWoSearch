@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>検索用語の設定</title>
+  <meta charset="UTF-8">
+  <style>
+    body { font-family: Arial, sans-serif; }
+    .container { margin: 20px; }
+    label { display: block; margin: 5px 0; }
+    input { margin: 5px 0 15px; width: 300px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>どこかをサーチ 検索用語の設定</h1>
+    <p>正規表現で指定してください</p>
+    <p>例1) 秋田駅と新青森駅の双方がある候補が欲しいときは、単語1に秋田駅,単語2に新青森駅を入力してください</p>
+    <p>例2) 秋田駅か新青森駅のいずれかがある候補が欲しいときは、単語1に(秋田駅|新青森駅)を入力してください</p>
+    <form id="termsForm">
+      <label>単語1: <input type="text" id="term1"></label>
+      <label>単語2: <input type="text" id="term2"></label>
+      <label>単語3: <input type="text" id="term3"></label>
+      <label>単語4: <input type="text" id="term4"></label>
+      <button type="submit">保存</button>
+    </form>
+  </div>
+  <script src="options.js"></script>
+</body>
+</html>

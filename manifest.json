@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "どこかをサーーチ！",
+  "description": "どこかにビューンにて特定の候補が出るまでガチャを引き直すpluginです",
+  "version": "1.0",
+  "permissions": ["storage"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://dokokani-eki-net.com/dokokani/candidates"],
+      "js": ["content.js"]
+    }
+  ],
+  "options_page": "options.html",
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
