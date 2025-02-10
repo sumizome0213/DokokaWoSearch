@@ -1,0 +1,2 @@
+# DokokaWoSearch
+特定の候補がでるまでどこかにビューンを引き直すChrome拡張
